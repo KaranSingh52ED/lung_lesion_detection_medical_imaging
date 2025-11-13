@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+seaborn
+opencv-python
+scikit-image
+scipy
+pywavelets
+scikit-learn
+tensorflow
+jupyter
+notebook
+black
