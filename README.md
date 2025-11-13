@@ -5,13 +5,16 @@
 **Submission Deadline:** November 14, 2025
 **Submitted By:** Karan Singh (ED22B052)
 
+**GitHub Repository:** [https://github.com/KaranSingh52ED/lung_lesion_detection_medical_imaging](https://github.com/KaranSingh52ED/lung_lesion_detection_medical_imaging)  
+**Full Report:** [Google Docs Link](https://docs.google.com/document/d/18Eo2SP86SjGxkjmFyIzB0o09asRsXR2u/edit?usp=drive_link&ouid=111883373146115524009&rtpof=true&sd=true)
+
 ---
 
 ## Overview
 
 This project implements an automated system for classifying lung lesions as benign or malignant using texture and morphological features extracted from CT scan images. The system employs image segmentation, feature extraction (GLCM, LBP, Wavelet, and Morphological features), and an SVM classifier to achieve accurate classification.
 
-The codebase is designed to be easy to use, well-documented, and ready to run out of the box. Whether you're comfortable with Jupyter notebooks or prefer running Python scripts directly, we've got you covered.
+The codebase is designed to be easy to use, well-documented, and ready to run out of the box. Simply run the Python script to execute the complete pipeline.
 
 ---
 
@@ -20,11 +23,9 @@ The codebase is designed to be easy to use, well-documented, and ready to run ou
 ```
 lung_lesion_detection_medical_imaging/
 │
-├── lung_lesion_detection.ipynb    # Jupyter notebook version
-├── lung_lesion_detection.py       # Python script version
+├── lung_lesion_detection.py       # Main Python script
 ├── requirements.txt                # Python dependencies
 ├── README.md                       # This file
-├── LICENSE                         # License information
 │
 ├── datasets/                       # Dataset directory
 │   ├── train/
@@ -171,47 +172,6 @@ datasets/
 
 ## Running the Code
 
-You can run the code in two ways, depending on your preference:
-
-### Option 1: Jupyter Notebook (Recommended for Interactive Use)
-
-Jupyter notebooks are excellent for exploring the code step-by-step and seeing intermediate results.
-
-1. **Launch Jupyter Notebook:**
-
-```bash
-jupyter notebook lung_lesion_detection.ipynb
-```
-
-This will open your web browser with the notebook interface (typically at `http://localhost:8888`).
-
-2. **Run the notebook:**
-
-You have two options:
-
-- **Quick execution**: Click **Cell → Run All** in the menu bar to execute all cells sequentially
-- **Step-by-step**: Press **Shift + Enter** to run cells one at a time (recommended for first-time users to observe progress)
-
-3. **What happens:**
-
-The notebook executes the following steps in order:
-
-- **Setup & Imports**: Loads all required libraries
-- **Data Loading**: Loads images from the datasets folder
-- **Preprocessing**: Normalizes and resizes images
-- **Segmentation**: Applies Otsu thresholding and morphological operations
-- **Feature Extraction**: Extracts GLCM, LBP, Wavelet, and morphological features
-- **Model Training**: Trains SVM classifier on training data
-- **Evaluation**: Evaluates model on validation and test sets
-- **Visualization**: Generates all required figures
-- **Results Export**: Saves metrics to JSON and text files
-
-**Expected execution time:** 3-5 minutes depending on dataset size and system specifications.
-
-### Option 2: Python Script (For Batch Processing)
-
-If you prefer command-line execution or want to automate the process:
-
 1. **Navigate to the project directory:**
 
 ```bash
@@ -240,7 +200,21 @@ The script will print progress messages to the console, showing:
 - Training progress
 - Final evaluation metrics
 
-**Expected execution time:** 3-5 minutes depending on dataset size.
+**What happens:**
+
+The script executes the following steps in order:
+
+- **Setup & Imports**: Loads all required libraries
+- **Data Loading**: Loads images from the datasets folder
+- **Preprocessing**: Normalizes and resizes images
+- **Segmentation**: Applies Otsu thresholding and morphological operations
+- **Feature Extraction**: Extracts GLCM, LBP, Wavelet, and morphological features
+- **Model Training**: Trains SVM classifier on training data
+- **Evaluation**: Evaluates model on validation and test sets
+- **Visualization**: Generates all required figures
+- **Results Export**: Saves metrics to JSON and text files
+
+**Expected execution time:** 3-5 minutes depending on dataset size and system specifications.
 
 ---
 
@@ -394,23 +368,6 @@ which python   # Linux/Mac
 where python   # Windows
 ```
 
-### Jupyter Notebook Won't Launch
-
-**Problem:** Jupyter doesn't start or browser doesn't open.
-
-**Solution:**
-
-```bash
-# Install/upgrade Jupyter
-pip install --upgrade jupyter notebook
-
-# Launch with specific port
-jupyter notebook --port 8888
-
-# If browser doesn't open, copy the URL from terminal
-# It will look like: http://localhost:8888/?token=...
-```
-
 ### Dataset Not Found
 
 **Problem:** Error message: `⚠️ Warning: datasets/train/benign does not exist!`
@@ -468,10 +425,9 @@ jupyter notebook --port 8888
 
 **Solution:**
 
-- **For Jupyter:** Ensure you ran ALL cells sequentially from top to bottom
-- **For Python script:** Verify the script ran to completion without errors
+- Verify the script ran to completion without errors
 - Check that the `outputs/` folder exists and is writable
-- Look for error messages in the console or notebook output
+- Look for error messages in the console output
 
 ### Permission Denied Errors (Linux/Mac)
 
