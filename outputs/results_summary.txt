@@ -1,0 +1,36 @@
+
+======================================================================
+3D LUNG LESION DETECTION - RESULTS (5-FOLD CV)
+======================================================================
+
+DATASET:
+--------
+Training:   1323 images (Benign: 650, Malignant: 673)
+Validation: 330 images (Benign: 162, Malignant: 168)
+Test:       413 images (Benign: 203, Malignant: 210)
+
+FEATURES: 99
+
+5-FOLD CROSS-VALIDATION RESULTS:
+---------------------------------
+Accuracy:  0.9312 ± 0.0074
+Precision: 0.9430 ± 0.0182
+Recall:    0.9213 ± 0.0258
+F1-Score:  0.9315 ± 0.0082
+AUC:       0.9810 ± 0.0024
+
+TRAINING SET (Final Model):
+----------------------------
+Accuracy:    0.9622
+Sensitivity: 0.9643
+Specificity: 0.9600
+AUC:         0.9969
+
+TEST SET (Final Model):
+-----------------------
+Accuracy:    0.9492
+Sensitivity: 0.9381
+Specificity: 0.9606
+AUC:         0.9882
+
+======================================================================

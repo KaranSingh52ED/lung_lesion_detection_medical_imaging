@@ -6,7 +6,7 @@
 **Submitted By:** Karan Singh (ED22B052)
 
 **GitHub Repository:** [https://github.com/KaranSingh52ED/lung_lesion_detection_medical_imaging](https://github.com/KaranSingh52ED/lung_lesion_detection_medical_imaging)  
-**Full Report:** [Google Docs Link](https://docs.google.com/document/d/18Eo2SP86SjGxkjmFyIzB0o09asRsXR2u/edit?usp=drive_link&ouid=111883373146115524009&rtpof=true&sd=true)
+**Full Report:** [PDF Report Link](https://drive.google.com/file/d/13x_CBIZaviY_HbjtB2xE_FgRP2tiNvOz/view?usp=drive_link)
 
 ---
 
